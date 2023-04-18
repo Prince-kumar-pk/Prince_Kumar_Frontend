@@ -6,7 +6,7 @@ const WrappedSingleListItem = ({ index, isSelected, onClickHandler, text }) => {
   return (
     <li
       style={{ backgroundColor: isSelected ? "green" : "red" }}
-    //   onClick={onClickHandler(index)}
+    //   onClick={onClickHandler(index)} 
     onClick={()=>{onClickHandler(index)}}  // modified
     >
       {text}
@@ -40,7 +40,7 @@ const WrappedListComponent = ({ items }) => {
     <ul style={{ textAlign: "left" }}>
       { items.map((item, index) => (
         <SingleListItem
-        key={index}  // Modified
+         key={index}  // Modified
           onClickHandler={() => handleClick(index)}
           text={item.text}
           index={index}
@@ -61,7 +61,7 @@ WrappedListComponent.propTypes = {
 };
 
 WrappedListComponent.defaultProps = {
-  items: [{text:"Prince Kumar"}], 
+  items: [{text:"Prince Kumar"}], // modified
 };
 
 const List = memo(WrappedListComponent);
