@@ -13,7 +13,8 @@ function App() {
       {text:"Hello This is Akash Mishra"},
       {text:"Hello This is Anshul Singh"},
       {text:"Hello This is Rishabh Kumar"},
-      {text:"Hello This is Soumya Ranjan"}
+      {text:"Hello This is Soumya Ranjan"},
+      {text:"Hello This is Pramod Kumar Gupta"}
     ]}
 
    />
